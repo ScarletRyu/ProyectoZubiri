@@ -10,6 +10,9 @@
 
 Cliente cliente = (Cliente)session.getAttribute("usuario");
 
+
+
+
 %>
 
 <style>
@@ -37,12 +40,12 @@ Cliente cliente = (Cliente)session.getAttribute("usuario");
 	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav mr-auto">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="http://localhost:8080/ZubiriTechnology/index.jsp">Inicio <span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="http://localhost:8080/TiendaOnline/index.jsp">Inicio <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item dropdown-submenu">
         	<a class="nav-link test" tabindex="-1" href="#">Productos <span class="caret"></span></a>
         	<ul class="dropdown-menu">
-        		<li><a tabindex="-1" href='CrearProducto'>Crear producto</a></li>
+        		<li><a tabindex="-1" href='http://localhost:8080/TiendaOnline/crearProducto.jsp'>Crear producto</a></li>
         		<li><a tabindex="-1" href="#">Editar producto</a></li>
           	</ul>
 	      </li>
@@ -59,7 +62,7 @@ Cliente cliente = (Cliente)session.getAttribute("usuario");
 	       		<a class="nav-link " href="#"><%=cliente.getNombreUsuario() %></a>
 	      	</li>
 		    <li class="nav-item">
-		        <a class="nav-link" href="http://localhost:8080/ZubiriTechnology/Logout.jsp" >Cerrar Sesión</a>
+		        <a class="nav-link" href="http://localhost:8080/TiendaOnline/Logout.jsp" >Cerrar Sesión</a>
 		    </li>
 	    
 	    </ul>

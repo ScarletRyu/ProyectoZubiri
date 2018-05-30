@@ -26,10 +26,8 @@ public class Login extends HttpServlet {
 			
 			sesion.setAttribute("usuario", cliente);
 			
-			response.sendRedirect("http://localhost/ZubiriTechnology/index.jsp");
+			response.sendRedirect("http://localhost/TiendaOnline/index.jsp");
 		}
 	}
 
 }
-
-

@@ -34,7 +34,6 @@
 		response.sendRedirect("http://localhost:8080/TiendaOnline/index.jsp");
 
 	}
-	
 
 %>
 
