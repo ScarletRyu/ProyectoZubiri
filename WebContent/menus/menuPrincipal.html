@@ -1,0 +1,156 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://localhost:8080/Biblioteca/css/style.css" type ="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+	  height: 500px;
+  }
+   .col-sm-3 > .item > images {
+    margin: 0 auto;
+}
+    
+  </style>
+  
+  
+
+      
+<div class="jumbotron jumbotron-fluid">
+	  <div class="container">
+	    <h1 class="display-4">ZUBIRI TECHNOLOGY</h1>
+	    <p class="lead"></p>
+	  </div>
+	</div>
+<div class ="container">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">
+	    <img src="images/logo.png" width="50" height="50" alt="">
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="http://localhost:8080/ZubiriTechnology/index.jsp">Inicio <span class="sr-only">(current)</span></a>
+	      </li>
+	      
+	      <li class="nav-item dropdown-submenu">
+        	<a class="nav-link test" tabindex="-1" href="#">Productos <span class="caret"></span></a>
+        	<ul class="dropdown-menu">
+	          <li><a tabindex="-1" href='http://localhost:8080/ZubiriTechnology/categorias/graficas.jsp'>Gráficas</a></li>
+	          <li><a tabindex="-1" href="http://localhost:8080/ZubiriTechnology/categorias/hdd.jsp">HDD</a></li>
+	          <li><a tabindex="-1" href="http://localhost:8080/ZubiriTechnology/categorias/perifericos.jsp">Perifericos</a></li>
+          	</ul>
+	      </li>
+	    </ul>
+	    <ul class="navbar-nav">
+	    	<li class="nav-item">
+	       		<a class="nav-link" href="#" data-toggle="modal" data-target="#registro">Registrarse</a>
+	      	</li>
+		    <li class="nav-item">
+		        <a class="nav-link" href="#" data-toggle="modal" data-target="#inicioSesion">Iniciar Sesión</a>
+		    </li>
+	    
+	    </ul>
+	    
+	  </div>
+	</nav>
+	  
+	 
+	
+
+</div>
+
+<div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Formulario de Registro</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="http://localhost:8080/TiendaOnline/registro.jsp" method="get">
+          <div class="form-group">
+		    <label for="exampleInputNombre">Nombre</label>
+		    <input type="text" class="form-control" name="nombre" aria-describedby="emailHelp" placeholder="Introduce tu nombre">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputApellido">Apellidos</label>
+		    <input type="text" class="form-control" name="apellidos" aria-describedby="emailHelp" placeholder="Introduce tu(s) apellido(s)">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputDni">Dni</label>
+		    <input type="text" class="form-control" name="dni" aria-describedby="emailHelp" placeholder="Introduce tu dni">
+		  </div>
+		  <div class="form-group" id="datetimepicker">
+			<label for="exampleInputFechaNacimiento">Fecha de nacimiento</label>
+			<input type="text" class="form-control" name="fecha" aria-describedby="fecha_addon" placeholder="Introduce tu fecha de nacimiento">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputUsuario">Nombre de Usuario</label>
+		    <input type="text" class="form-control" name="nomUsuario" aria-describedby="emailHelp" placeholder="Introduce un nombre de usuario">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword">Contraseña</label>
+		    <input type="password" class="form-control" name="password" placeholder="Introduce la contraseña">
+		  </div>
+  
+  		 <button type="submit" class="btn btn-primary">Registrarse</button>
+		</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="inicioSesion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="http://localhost:8080/TiendaOnline/login.jsp" method="post">
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Nombre de Usuario</label>
+		    <input type="text" class="form-control" name="nomUsuario" aria-describedby="emailHelp" placeholder="Introduce nombre de usuario">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Contraseña</label>
+		    <input type="password" class="form-control" name="password" placeholder="Introduce la contraseña">
+		  </div>
+  
+  		 <button type="submit" class="btn btn-primary">Entrar</button>
+		</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+            $(function () {
+                $('#datetimepicker').datetimepicker();
+            });
+            
+            
+</script>
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+
